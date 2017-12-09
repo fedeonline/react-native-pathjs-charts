@@ -213,8 +213,8 @@ export default class LineChart extends Component {
           y2 = chart.yscale(c.to);
 
           x = 0;
-          y = y1;
-          height = y2 - y1;
+          y = y2;
+          height = Math.abs(y2 - y1);
           width = chartArea.x.max;
 
           labelX = labelOffsetLeft;
